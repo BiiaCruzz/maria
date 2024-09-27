@@ -1,0 +1,43 @@
+#include <iostream>
+    #include <string>
+    #include <cstdlib>
+    #include <time>
+    
+    using namespace std;
+    
+    struct tamagotchi; {
+        string nome;
+        int fome;
+        int felicidade;
+        int energia;
+    }
+    
+    tamagotchi criartamagotchi(string nome){
+        tamagotchi bichinho;
+        bichinho.nome = nome;
+        bichinho.fome = 0;
+        bichinho.felicidade = 100;
+        bichinho.energia = 100;
+        return bichinho;
+    }
+    void mostrarOpcoes(){
+        cout << "escolha o seu bichinho virtual: " << endl;
+        cout << "1. Gato:<< endl;
+        cout << "/\_/\\" << endl;
+        cout << "(O.O)" << endl;
+        cout << "> ^ <" << endl;
+        cout << "2. cachorro" << endl;
+        cout << "/\_/\\" << endl;
+        cout << "\O,O/\\" << endl;
+        cout << " \_/" << endl;
+        cout << "3. coelho" << endl;
+        cout << "(\_/) " << endl;
+        cout << "(O,O) " << endl;
+        cout << "(> <) " << endl;
+    }
+    int escolherbichinho(){
+        int escolha;
+        mostrarOpcoes();
+        cin >> escolha;
+        return escolha;
+    }
